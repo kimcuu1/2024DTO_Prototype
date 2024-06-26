@@ -1,6 +1,8 @@
 /* Heading */
 h1.box {
-	border: 5px solid #d7b6b0ff;
-	background-color: #d7b6b0ff;
-	margin: 10px 450px 10px 10px;
+	border: 5px solid transparent;
+	border-image: url(HeaderBox.png) 30 round;
+	color: black;
+	width: 500px;
+	margin: 10px;
 }
