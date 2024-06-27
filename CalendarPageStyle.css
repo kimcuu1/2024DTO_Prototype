@@ -1,8 +1,19 @@
 /* Heading */
-h1.box {
-	border: 5px solid transparent;
-	border-image: url(HeaderBox.png) 30 round;
-	color: black;
-	width: 500px;
-	margin: 10px;
+.header-container {
+	position: relative;
+	top: 30px;
+	left: 50px;
+}
+
+.header-container img {
+	width: 300px;
+	height: 60px;
+}
+
+.header-text {
+	position: absolute;
+	top: -15px;
+	color: Black;
+	padding-left: 10px;
+	font-size: 36px;
 }
