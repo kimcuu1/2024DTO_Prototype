@@ -20,3 +20,20 @@
 	font-family: 'Playfair Display', serif;
 	font-weight: 800;
 }
+
+/* News Links Container and Display */
+.newslink-container {
+	display: inline-block;
+	margin: 30px 50px 0px 50px;
+	background-color: #e8ddd8ff ;
+	width: 300px;
+	height: 700px;
+}
+
+.newslink-display {
+	position: absolute;
+	margin-left: 100px;
+	background-color: #f5f3f2ff;
+	width: 500px;
+	height: 700px;
+}
