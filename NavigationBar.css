@@ -21,7 +21,6 @@ ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
-}
 
 .nav-left {
 	justify-content: center;
@@ -38,13 +37,17 @@ li {
 	margin: 0 10px;
 }
 
-li a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 30px 16px;
-	text-decoration: none;
-}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 30px 16px;
+		text-decoration: none;
+		/* Karla Font */
+		font-family: "Karla", sans-serif;
+		font-weight: 700;
+		font-size: 13px;
+	}
 
 li a:hover {
 	color: #d7b6b0ff;
