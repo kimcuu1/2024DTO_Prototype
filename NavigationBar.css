@@ -5,6 +5,11 @@ body {
 	margin: 0px;
 }
 
+/* Header default colour */
+h1 {
+	color: #373232ff;
+}
+
 /* Navigation bar */
 nav {
 	background-color: #e1d0c8ff;
