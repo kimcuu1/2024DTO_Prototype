@@ -1,0 +1,139 @@
+﻿/* Heading default colour */
+h1 {
+    color: #373232ff;
+}
+
+/* Calendar Heading */
+.CALheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .CALheading-container img {
+        display: block;
+        width: 260px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.CALheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+/* Educational Links Heading */
+.ELheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .ELheading-container img {
+        display: block;
+        width: 380px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.ELheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Social Media Heading */
+.SMheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .SMheading-container img {
+        display: block;
+        width: 350px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.SMheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* News Heading */
+.NEWSheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .NEWSheading-container img {
+        display: block;
+        width: 260px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.NEWSheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Gallery Heading */
+.GALheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .GALheading-container img {
+        display: block;
+        width: 260px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.GALheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+/* About Page */
+.ABTheading-container {
+    position: relative;
+    display: inline-block;
+}
+
+    .ABTheading-container img {
+        display: block;
+        width: 260px;
+        height: 50px;
+        padding: 10px 20px;
+    }
+
+.ABTheading-text {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
