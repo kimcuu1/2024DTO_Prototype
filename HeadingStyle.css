@@ -1,6 +1,12 @@
-﻿/* Heading default colour */
+﻿/* Heading default colour + font */
 h1 {
     color: #373232ff;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
 }
 
 /* Calendar Heading */
@@ -16,15 +22,6 @@ h1 {
         padding: 10px 20px;
     }
 
-.CALheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
-
 /* Educational Links Heading */
 .ELheading-container {
     position: relative;
@@ -37,16 +34,6 @@ h1 {
         height: 50px;
         padding: 10px 20px;
     }
-
-.ELheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* Social Media Heading */
 .SMheading-container {
@@ -61,16 +48,6 @@ h1 {
         padding: 10px 20px;
     }
 
-.SMheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* News Heading */
 .NEWSheading-container {
     position: relative;
@@ -83,16 +60,6 @@ h1 {
         height: 50px;
         padding: 10px 20px;
     }
-
-.NEWSheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* Gallery Heading */
 .GALheading-container {
@@ -107,15 +74,6 @@ h1 {
         padding: 10px 20px;
     }
 
-.GALheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
-
 /* About Page */
 .ABTheading-container {
     position: relative;
@@ -128,12 +86,3 @@ h1 {
         height: 50px;
         padding: 10px 20px;
     }
-
-.ABTheading-text {
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
