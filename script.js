@@ -1,69 +1,115 @@
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const eventDetails = document.getElementById('eventDetails');
-let events = {
-    "2023-04-01": "April Fools",
-    "2023-04-18": "9+ Events",
-    "2023-04-30": "3 Events"
-};
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth();
 
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
+const day = document.querySelector(".calendar-dates");
 
-const calendarDays = document.getElementById('calendarDays');
-const monthYear = document.getElementById('monthYear');
+const currdate = document
+    .querySelector(".calendar-current-date");
 
-document.getElementById('prevMonth').addEventListener('click', () => {
-    if (currentMonth === 0) {
-        currentMonth = 11;
-        currentYear--;
-    } else {
-        currentMonth--;
+const prenexIcons = document
+    .querySelectorAll(".calendar-navigation span");
+
+// Array of month names
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+
+// Function to generate the calendar
+const manipulate = () => {
+
+    // Get the first day of the month
+    let dayone = new Date(year, month, 1).getDay();
+
+    // Get the last date of the month
+    let lastdate = new Date(year, month + 1, 0).getDate();
+
+    // Get the day of the last date of the month
+    let dayend = new Date(year, month, lastdate).getDay();
+
+    // Get the last date of the previous month
+    let monthlastdate = new Date(year, month, 0).getDate();
+
+    // Variable to store the generated calendar HTML
+    let lit = "";
+
+    // Loop to add the last dates of the previous month
+    for (let i = dayone; i > 0; i--) {
+        lit +=
+            `<li class="inactive">${monthlastdate - i + 1}</li>`;
     }
-    renderCalendar();
-});
 
-document.getElementById('nextMonth').addEventListener('click', () => {
-    if (currentMonth === 11) {
-        currentMonth = 0;
-        currentYear++;
-    } else {
-        currentMonth++;
-    }
-    renderCalendar();
-});
+    // Loop to add the dates of the current month
+    for (let i = 1; i <= lastdate; i++) {
 
-function renderCalendar() {
-    calendarDays.innerHTML = '';
-    monthYear.textContent = `${monthNames[currentMonth]} ${currentYear}`;
-
-    let firstDay = new Date(currentYear, currentMonth, 1).getDay();
-    let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-    for (let i = 0; i < firstDay; i++) {
-        const emptyDiv = document.createElement('div');
-        calendarDays.appendChild(emptyDiv);
+        // Check if the current date is today
+        let isToday = i === date.getDate()
+            && month === new Date().getMonth()
+            && year === new Date().getFullYear()
+            ? "active"
+            : "";
+        lit += `<li class="${isToday}">${i}</li>`;
     }
 
-    for (let day = 1; day <= daysInMonth; day++) {
-        const dateDiv = document.createElement('div');
-        dateDiv.textContent = day;
-        let dateKey = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-
-        if (events[dateKey]) {
-            dateDiv.classList.add('event');
-            dateDiv.addEventListener('click', () => {
-                eventDetails.textContent = events[dateKey];
-            });
-        } else {
-            dateDiv.addEventListener('click', () => {
-                eventDetails.textContent = 'No Events';
-            });
-        }
-
-        calendarDays.appendChild(dateDiv);
+    // Loop to add the first dates of the next month
+    for (let i = dayend; i < 6; i++) {
+        lit += `<li class="inactive">${i - dayend + 1}</li>`
     }
+
+    // Update the text of the current date element 
+    // with the formatted current month and year
+    currdate.innerText = `${months[month]} ${year}`;
+
+    // update the HTML of the dates element 
+    // with the generated calendar
+    day.innerHTML = lit;
 }
 
-renderCalendar();
-urce code
+manipulate();
+
+// Attach a click event listener to each icon
+prenexIcons.forEach(icon => {
+
+    // When an icon is clicked
+    icon.addEventListener("click", () => {
+
+        // Check if the icon is "calendar-prev"
+        // or "calendar-next"
+        month = icon.id === "calendar-prev" ? month - 1 : month + 1;
+
+        // Check if the month is out of range
+        if (month < 0 || month > 11) {
+
+            // Set the date to the first day of the 
+            // month with the new year
+            date = new Date(year, month, new Date().getDate());
+
+            // Set the year to the new year
+            year = date.getFullYear();
+
+            // Set the month to the new month
+            month = date.getMonth();
+        }
+
+        else {
+
+            // Set the date to the current date
+            date = new Date();
+        }
+
+        // Call the manipulate function to 
+        // update the calendar display
+        manipulate();
+    });
+});
