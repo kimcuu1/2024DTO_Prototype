@@ -51,9 +51,6 @@ header .calendar-navigation {
         text-align: center;
         line-height: 38px;
         user-select: none;
-        /* arrow colour */
-        color: #d7b6b0ff;
-        font-size: 3rem;
     }
 
 .calendar-navigation span:last-child {
@@ -134,6 +131,7 @@ header .calendar-current-date {
 }
 
 .calendar-btn {
+    fill: #d7b6b0ff;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-appearance: button;
