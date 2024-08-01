@@ -32,10 +32,9 @@ body {
     .calendar-container header {
         background: #565050ff;
         color: white;
-        display: flex;
+        padding-top: 25px;
+        padding-bottom: 10px;
         align-items: center;
-        padding: 25px 75px 10px;
-        justify-content: space-between;
     }
 
 header .calendar-navigation {
@@ -62,7 +61,36 @@ header .calendar-navigation span:hover {
     color: #565050ff;
 }
 
+.calendar-navigation svg {
+    fill: #d7b6b0ff;
+}
+
+.calendar-btnL {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    overflow: visible;
+    justify-content: center;
+	display: flex;
+    margin-left: 5%;
+}
+
+.calendar-btnR {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    overflow: visible;
+	display: flex;
+	justify-content: flex-end;
+    margin-right: 5%;
+}
+
 header .calendar-current-date {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
     font-weight: 500;
     font-size: 1.45rem;
 }
@@ -130,26 +158,3 @@ header .calendar-current-date {
     background: #e4e1e1;
 }
 
-.calendar-btn {
-    fill: #d7b6b0ff;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-appearance: button;
-    background: none;
-    border: 0;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    line-height: normal;
-    min-width: 27px;
-    outline: none;
-    overflow: visible;
-    padding: 0;
-    text-align: center;
-    &:active
-
-{
-    border-radius: var(--vanilla-calendar-border-radius);
-    box-shadow: 0 0 0 2px rgba(var(--vanilla-calendar-today-bg-color), 0.1)
-}
-}
