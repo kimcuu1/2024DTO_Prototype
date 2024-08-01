@@ -83,11 +83,12 @@ body {
     .calendar-body .calendar-weekdays li {
         cursor: default;
         font-weight: 500;
-        background-color: #d7b6b0ff; 
+        background-color: #d7b6b0ff;
+        padding: 7px 0 7px 0;
     }
 
     .calendar-body .calendar-dates li {
-        margin-top: 30px;
+        margin-top: 25px;
         position: relative;
         z-index: 1;
         cursor: pointer;
