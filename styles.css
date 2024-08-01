@@ -32,27 +32,28 @@ body {
 .calendar-header {
    background: #565050ff;
    color: white;
-   padding-top: 25px;
-   padding-bottom: 10px;
+   padding: 15px;
    align-items: center;
+   display: flex;
  }
 
 .calendar-header svg {
     fill: #d7b6b0ff;
 }
 
-.calendar-header .calendar-btn {
+.calendar-btn {
     background: none;
     border: 0;
     cursor: pointer;
     outline: none;
     overflow: visible;
     padding: 0;
-    text-align: center;
+    min-width: 30px;
 }
 
 
 .calendar-header .calendar-current-date {
+    width: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 1.45rem;
