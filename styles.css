@@ -37,31 +37,7 @@ body {
         align-items: center;
     }
 
-header .calendar-navigation {
-    display: flex;
-}
-
-    header .calendar-navigation span {
-        height: 38px;
-        width: 38px;
-        margin: 0 30px;
-        border-radius: 50%;
-        cursor: pointer;
-        text-align: center;
-        line-height: 38px;
-        user-select: none;
-    }
-
-.calendar-navigation span:last-child {
-    margin-right: -50px;
-}
-
-header .calendar-navigation span:hover {
-    background: #d7b6b0ff;
-    color: #565050ff;
-}
-
-.calendar-navigation svg {
+.calendar-header svg {
     fill: #d7b6b0ff;
 }
 
@@ -89,6 +65,7 @@ header .calendar-navigation span:hover {
 
 header .calendar-current-date {
     text-align: center;
+
     margin-left: 25%;
     margin-right: 25%;
     font-weight: 500;
