@@ -8,7 +8,7 @@ const currdate = document
     .querySelector(".calendar-current-date");
 
 const prenexIcons = document
-    .querySelectorAll(".calendar-navigation span");
+    .querySelectorAll(".calendar-btn");
 
 // Array of month names
 const months = [
