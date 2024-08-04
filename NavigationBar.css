@@ -17,11 +17,12 @@ nav {
 	padding: 0 10px;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
 
 .nav-left {
 	justify-content: center;
@@ -34,11 +35,11 @@ nav ul {
 	margin-left: 10px;
 }
 
-li {
+nav li {
 	margin: 0 10px;
 }
 
-	li a {
+	nav li a {
 		display: block;
 		color: #373232ff;
 		text-align: center;
@@ -51,6 +52,6 @@ li {
 		font-size: 16px;
 	}
 
-li a:hover {
+nav li a:hover {
 	color: #d7b6b0ff;
 }
