@@ -120,14 +120,22 @@
     background: #fff;
     width: 40%;
     display: flex;
-    min-height: 35vh;
+    min-height: 45vh;
     align-items: center;
     justify-content: left;
+}
 
+.event-header .current-event {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.45rem;
+    height: 10px;
 }
 
 .event-header {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 292px;
     background: #565050ff;
     color: white;
     padding: 10px;
@@ -138,4 +146,6 @@
 .event-body {
     color: black;
     padding: 0 0px 10px 0px;
+    margin-top: 25px;
+    position: relative;
 }
