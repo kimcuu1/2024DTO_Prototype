@@ -3,6 +3,8 @@
     font-style: normal;
 }
 
+/* CALENDAR STYLING */
+
 .calendar {
     display: flex;
     min-height: 35vh;
@@ -111,3 +113,29 @@
     background: #e4e1e1;
 }
 
+/* EVENTS CONTAINER */
+
+.event-container {
+    margin-left: 20px;
+    background: #fff;
+    width: 40%;
+    display: flex;
+    min-height: 35vh;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.event-header {
+    margin-left: 30px;
+    background: #565050ff;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.event-body {
+    color: black;
+    padding: 0 0px 10px 0px;
+}
