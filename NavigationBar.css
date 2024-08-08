@@ -4,6 +4,7 @@ body {
 	margin: 0px;
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
+	font-weight: 450;
 }
 
 /* Navigation bar */
@@ -46,7 +47,6 @@ nav li {
 		text-align: center;
 		padding: 30px 16px;
 		text-decoration: none;
-		font-weight: 400;
 		font-size: 18px;
 		transition: 0.3s;
 	}

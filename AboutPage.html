@@ -74,24 +74,34 @@
     </div>
 
     <!-- CONTENT -->
-    <div class="about-sectionsbox">
-        <div class="about-sections">
-            <a>About This Brand</a>
-            <a>Contact</a>
-            <a>FAQs</a>
+    <div class="aboutMAINcontent">
+        <div class="about-sectionsbox">
+            <div class="about-sections">
+                <a onclick="openSection(event,'ATB')" id="defaultOpen">
+                About This Brand
+                </a>
+                <a onclick="openSection(event,'Contact')" id="defaultOpen">
+                Contact
+                </a>
+                <a onclick="openSection(event,'FAQs')" id="defaultOpen">
+                FAQs
+                </a>
+            </div>
         </div>
 
-        <div id="About This Brand" class="about-content">
-            <h2>About This Brand</h2>
-            <p>Description</p>
-        </div>
-        <div id="Contact" class="about-content">
-            <h2>Contact</h2>
-            <p>Description</p>
-        </div>
-        <div id="FAQs" class="about-content">
-            <h2>FAQs</h2>
-            <p>Description</p>
+        <div class="about-contentbox">
+            <div id="About This Brand" class="about-content">
+                <h2>About This Brand</h2>
+                <p>Description</p>
+            </div>
+            <div id="Contact" class="about-content">
+                <h2>Contact</h2>
+                <p>Description</p>
+            </div>
+            <div id="FAQs" class="about-content">
+                <h2>FAQs</h2>
+                <p>Description</p>
+            </div>
         </div>
     </div>
 

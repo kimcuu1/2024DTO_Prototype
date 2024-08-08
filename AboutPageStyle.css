@@ -1,7 +1,13 @@
 ﻿* {
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    color: #373232ff;
 }
+
+.aboutMAINcontent {
+    width: 100%;
+}
+
 
 .about-sectionsbox {
     margin-left: 20px;
@@ -19,7 +25,6 @@
     cursor: pointer;
     margin-left: 10%;
     margin-top: 50px;
-    color: #373232ff;
     list-style-type: none;
     font-size: 22px;
     position: relative;
@@ -39,7 +44,13 @@
             background-color: #e6cfccff;
         }
 
-.about-content {
+h2 {
+    font-weight: 450;
+}
+
+.about-contentbox {
+    display: block;
+    margin-left: 50%;
     background-color: #e8ddd8ff;
     padding: 20px;
 }
