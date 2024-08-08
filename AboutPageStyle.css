@@ -5,6 +5,9 @@
 }
 
 .aboutMAINcontent {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -44,13 +47,21 @@
             background-color: #e6cfccff;
         }
 
+        .about-sections a.active {
+            background-color: #d7b6b0ff;
+        }
+
 h2 {
     font-weight: 450;
 }
 
 .about-contentbox {
     display: block;
-    margin-left: 50%;
     background-color: #e8ddd8ff;
     padding: 20px;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 751px; 
+    overflow-y: auto; 
 }

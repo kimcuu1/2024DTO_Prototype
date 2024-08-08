@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="AboutPageStyle.css" />
     <link rel="stylesheet" href="MenuStyle.css" />
     <script src="MenuScript.js"></script>
+    <script src="AboutScript.js"></script>
 
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,20 +78,20 @@
     <div class="aboutMAINcontent">
         <div class="about-sectionsbox">
             <div class="about-sections">
-                <a onclick="openSection(event,'ATB')" id="defaultOpen">
+                <a class="about-link" onclick="openSection(event,'ATB')" id="defaultOpen">
                 About This Brand
                 </a>
-                <a onclick="openSection(event,'Contact')" id="defaultOpen">
+                <a class="about-link" onclick="openSection(event,'Contact')">
                 Contact
                 </a>
-                <a onclick="openSection(event,'FAQs')" id="defaultOpen">
+                <a class="about-link" onclick="openSection(event,'FAQs')">
                 FAQs
                 </a>
             </div>
         </div>
 
         <div class="about-contentbox">
-            <div id="About This Brand" class="about-content">
+            <div id="ATB" class="about-content">
                 <h2>About This Brand</h2>
                 <p>Description</p>
             </div>
