@@ -13,4 +13,6 @@ function openSection(evt, sectionName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+window.onload = function () {
+    document.getElementById("defaultOpen").click();
+};
