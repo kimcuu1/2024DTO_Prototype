@@ -8,22 +8,14 @@
     <meta charset="utf-8">
     <title>Je Suis | Calendar</title>
 
-    <!-- Icon and CSS Sheets -->
-    <!-- General -->
+    <!-- Icon, CSS Sheets, JS Script -->
     <link rel="icon" type="image/x-icon" href="LogoEdited2(no-name).png">
     <link rel="stylesheet" href="HeadingStyle.css" />
     <link rel="stylesheet" href="NavigationBar.css" />
     <link rel="stylesheet" href="CalendarPageStyle.css" />
+    <link rel="stylesheet" href="MenuStyle.css" />
+    <script src="MenuScript.js"></script>
 
-    <!-- FONTS -->
-    <!-- Playfair Display Font (For the heading/s) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- Karla Font (For the navigation links) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,8 +37,33 @@
             <li><a href="AboutPage.html">About</a></li>
         </ul>
 
+        <!-- MENU -->
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="Menuheading-container">
+                <img src="HeaderBox5.png" alt="Header Box" />
+                <h1>Menu</h1>
+            </div>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="CalendarPage.html">Calendar</a>
+                <a href="EducatePage.html">Educational Links</a>
+                <a href="SocialsPage.html">Social Media</a>
+                <a href="NewsPage.html">News</a>
+                <a href="GalleryPage.html">Gallery</a>
+                <a href="AboutPage.html">About</a>
+            </div>
+
+        </div>
+
         <ul class="nav-right">
-            <li><a href="MenuPage.html">Menu</a></li>
+            <li><a style="cursor:pointer" onclick="openNav()">&#9776;Menu</a></li>
         </ul>
     </nav>
 

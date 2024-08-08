@@ -47,7 +47,8 @@ nav li {
 		padding: 30px 16px;
 		text-decoration: none;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 18px;
+		transition: 0.3s;
 	}
 
 nav li a:hover {

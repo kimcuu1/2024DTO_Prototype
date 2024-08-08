@@ -1,9 +1,4 @@
-﻿.body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-}
-
-.overlay {
+﻿.overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -38,7 +33,7 @@
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 45px;
     font-size: 60px;
 }
@@ -50,7 +45,7 @@
 
     .overlay .closebtn {
         font-size: 40px;
-        top: 15px;
+        top: 5px;
         right: 35px;
     }
 }

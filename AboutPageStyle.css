@@ -4,10 +4,35 @@
 }
 
 .about-sectionsbox {
-    
+    margin-left: 20px;
+    background-color: #e8ddd8ff;
+    width: 380px;
+    height: 791px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .about-sections {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 50px;
     color: #373232ff;
     list-style-type: none;
+    font-size: 22px;
+    position: relative;
+}
+
+    .about-sections a {
+        padding-bottom: 50px;
+        text-decoration: none;
+        color: #373232ff;
+        display: block;
+        transition: 0.3s;
+    }
+
+.about-sections a:hover, .about-section a:focus {
+    color: #d7b6b0ff;
 }
