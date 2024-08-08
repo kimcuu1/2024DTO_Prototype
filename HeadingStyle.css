@@ -87,3 +87,16 @@ h1 {
         height: 50px;
         padding: 10px 20px;
     }
+
+.Menuheading-container {
+    position: relative;
+    display: inline-block;
+    margin: 3% 0 0 20%;
+}
+
+    .Menuheading-container img {
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding: 10px 20px;
+    }
