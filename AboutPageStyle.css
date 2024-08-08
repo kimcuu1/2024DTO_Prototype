@@ -26,13 +26,20 @@
 }
 
     .about-sections a {
-        padding-bottom: 50px;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-right: 10%;
         text-decoration: none;
         color: #373232ff;
         display: block;
         transition: 0.3s;
     }
 
-.about-sections a:hover, .about-section a:focus {
-    color: #d7b6b0ff;
+        .about-sections a:hover, .about-section a:focus {
+            background-color: #e6cfccff;
+        }
+
+.about-content {
+    background-color: #e8ddd8ff;
+    padding: 20px;
 }

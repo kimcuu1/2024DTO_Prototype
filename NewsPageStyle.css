@@ -21,7 +21,9 @@
 }
 
 	.newslink-sections a {
-		padding-bottom: 50px;
+		padding: 20px;
+		margin-bottom: 50px;
+		margin-right: 10%;
 		text-decoration: none;
 		color: #373232ff;
 		display: block;
@@ -29,5 +31,5 @@
 	}
 
 		.newslink-sections a:hover, .newslink-section a:focus {
-			color: #d7b6b0ff;
+			background-color: #e6cfccff;
 		}

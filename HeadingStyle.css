@@ -91,12 +91,12 @@ h1 {
 .Menuheading-container {
     position: relative;
     display: inline-block;
-    margin: 15px 0 0 20%;
+    margin: 15px 0 0 50px;
 }
 
     .Menuheading-container img {
         display: block;
-        width: 100%;
+        width: 650px;
         height: 60px;
         padding: 10px 20px;
     }

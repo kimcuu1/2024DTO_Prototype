@@ -1,4 +1,10 @@
-﻿.overlay {
+﻿.logo {
+    margin-left: 10%;
+    width: 75px;
+    height: 70px;
+}
+
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -15,13 +21,13 @@
     width: 100%;
     text-align: left;
     margin-left: 25%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .overlay a {
-    padding: 8px;
+    padding-bottom: 25px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color: #373232ff;
     display: block;
     transition: 0.3s;
@@ -44,7 +50,7 @@
     }
 
     .overlay .closebtn {
-        font-size: 40px;
+        font-size: 10px;
         top: 5px;
         right: 35px;
     }
