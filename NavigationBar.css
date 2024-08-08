@@ -1,8 +1,9 @@
 /* Background */
 body {
 	background-color: #746e6eff;
-	color: white;
 	margin: 0px;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
 }
 
 /* Navigation bar */
@@ -45,10 +46,7 @@ nav li {
 		text-align: center;
 		padding: 30px 16px;
 		text-decoration: none;
-		/* Karla Font */
-		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		font-style: normal;
 		font-size: 16px;
 	}
 
