@@ -2,8 +2,7 @@
 
 .calendar {
     display: flex;
-    min-height: 52vh;
-    align-items: flex-start;
+    justify-content: space-between;
     margin-left: 20px;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .calendar-body {
-    margin: -16px -0.3px 10px -40px;
+    margin: 0;
 }
 
     .calendar-body ul {
