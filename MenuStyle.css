@@ -25,7 +25,7 @@
 }
 
 .overlay a {
-    padding-bottom: 25px;
+    margin-bottom: 30px;
     text-decoration: none;
     font-size: 30px;
     color: #373232ff;
@@ -44,14 +44,3 @@
     font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-
-    .overlay .closebtn {
-        font-size: 10px;
-        top: 5px;
-        right: 35px;
-    }
-}

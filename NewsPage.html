@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="NewsPageStyle.css" />
     <link rel="stylesheet" href="MenuStyle.css" />
     <script src="MenuScript.js"></script>
+    <script src="NewsScript.js"></script>
 
    <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,9 @@
 <body>
 
     <nav>
-        <img src="LogoEdited2.png" alt="Logo" style="width:75px;height:70px;">
+        <a href="index.html">
+            <img src="LogoEdited2.png" alt="Logo" style="width:75px;height:70px;">
+        </a>
         <ul class="nav-left">
             <li><a href="index.html">Home</a></li>
             <li><a href="CalendarPage.html">Calendar</a></li>
@@ -74,18 +77,31 @@
     </div>
 
     <!-- CONTENT -->
-    <div class="newslink-container">
-        <div class="newslink-sections">
-            <a>News Link 1</a>
-            <a>News Link 2</a>
-            <a>News Link 3</a>
+    <div class="newsMAINcontent">
+        <div class="newslink-container">
+            <div class="newslink-sections">
+                <a class="news-link" onclick="openSection(event,'n1')" id="defaultOpen">News Link 1</a>
+                <a class="news-link" onclick="openSection(event,'n2')">News Link 2</a>
+                <a class="news-link" onclick="openSection(event,'n3')">News Link 3</a>
+            </div>
         </div>
-        <!-- News links container & display -->
-        <div class="newslink-display">
-            <h2 class="news-content"></h2>
-        </div>
-    </div>
 
+            <!-- News links container & display -->
+            <div class="newslink-contentdisplay">
+                <div id="n1" class="news-content">
+                    <h2>News Link 1</h2>
+                    <p class="content-body">Content</p>
+                </div>
+                <div id="n2" class="news-content">
+                    <h2>News Link 2</h2>
+                    <p class="content-body">Content</p>
+                </div>
+                <div id="n3" class="news-content">
+                    <h2>News Link 3</h2>
+                    <p class="content-body">Content</p>
+                </div>
+            </div>
+    </div>
 
 </body>
 

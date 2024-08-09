@@ -70,3 +70,9 @@ h2 {
 .about-content {
     font-size: 20px;
 }
+
+.about-desc {
+    background-color: #f5f3f2ff;
+    padding: 15px;
+    height: 590px;
+}
