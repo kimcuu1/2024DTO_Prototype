@@ -19,7 +19,7 @@
 .calendar-header {
     background: #565050ff;
     color: white;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     display: flex;
 }
@@ -69,6 +69,7 @@
     }
 
     .calendar-body .calendar-weekdays li {
+        margin-bottom: 15px;
         cursor: default;
         font-weight: 500;
         background-color: #d7b6b0ff;
@@ -76,8 +77,7 @@
     }
 
     .calendar-body .calendar-dates li {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         position: relative;
         z-index: 1;
         cursor: pointer;
@@ -135,7 +135,7 @@
 .event-header {
     background: #565050ff;
     color: white;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
