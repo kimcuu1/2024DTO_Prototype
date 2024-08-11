@@ -112,6 +112,11 @@
     background: #e4e1e1;
 }
 
+calendar-dates li.selected {
+    background-color: #d7b6b0ff;
+    border-radius: 10%;
+}
+
 /* EVENTS CONTAINER */
 
 .event-container {

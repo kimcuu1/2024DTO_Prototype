@@ -3,12 +3,8 @@ let year = date.getFullYear();
 let month = date.getMonth();
 
 const day = document.querySelector(".calendar-dates");
-
-const currdate = document
-    .querySelector(".calendar-current-date");
-
-const prenexIcons = document
-    .querySelectorAll(".calendar-btn");
+const currdate = document.querySelector(".calendar-current-date");
+const prenexIcons = document.querySelectorAll(".calendar-btn");
 
 // Array of month names
 const months = [
@@ -46,25 +42,18 @@ const manipulate = () => {
 
     // Loop to add the last dates of the previous month
     for (let i = dayone; i > 0; i--) {
-        lit +=
-            `<li class="inactive">${monthlastdate - i + 1}</li>`;
+        lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
     }
 
     // Loop to add the dates of the current month
     for (let i = 1; i <= lastdate; i++) {
-
-        // Check if the current date is today
-        let isToday = i === date.getDate()
-            && month === new Date().getMonth()
-            && year === new Date().getFullYear()
-            ? "active"
-            : "";
-        lit += `<li class="${isToday}">${i}</li>`;
+        let isToday = i === date.getDate() && month === new Date().getMonth() && year === new Date().getFullYear() ? "active" : "";
+        lit += `<li class="${isToday}" data-day="${i}">${i}</li>`;
     }
 
     // Loop to add the first dates of the next month
     for (let i = dayend; i < 6; i++) {
-        lit += `<li class="inactive">${i - dayend + 1}</li>`
+        lit += `<li class="inactive">${i - dayend + 1}</li>`;
     }
 
     // Update the text of the current date element 
@@ -74,42 +63,51 @@ const manipulate = () => {
     // update the HTML of the dates element 
     // with the generated calendar
     day.innerHTML = lit;
+
+    // Attach click event listeners to all dates
+    const dates = document.querySelectorAll(".calendar-dates li");
+    dates.forEach(date => {
+        date.addEventListener("click", handleDateClick);
+    });
 }
 
-manipulate();
+// Function to handle date clicks
+const handleDateClick = (event) => {
+    // Remove the background color from previously selected date
+    const previouslySelected = document.querySelector(".calendar-dates .selected");
+    if (previouslySelected) {
+        previouslySelected.classList.remove("selected");
+    }
+
+    // Add background color to the clicked date
+    event.target.classList.add("selected");
+
+    // Get the selected date's content and other information
+    const selectedDay = event.target.dataset.day;
+    const currentMonthYear = currdate.textContent;
+    const [monthName, year] = currentMonthYear.split(' ');
+
+    // Update event details
+    document.querySelector(".current-event").textContent = `Events for ${monthName}, ${selectedDay}, ${year}`;
+    document.querySelector(".event-description").textContent = `Details for events on ${monthName} ${selectedDay}, ${year}`;
+}
 
 // Attach a click event listener to each icon
 prenexIcons.forEach(icon => {
-
-    // When an icon is clicked
     icon.addEventListener("click", () => {
-
-        // Check if the icon is "calendar-prev"
-        // or "calendar-next"
         month = icon.id === "calendar-prev" ? month - 1 : month + 1;
 
-        // Check if the month is out of range
         if (month < 0 || month > 11) {
-
-            // Set the date to the first day of the 
-            // month with the new year
             date = new Date(year, month, new Date().getDate());
-
-            // Set the year to the new year
             year = date.getFullYear();
-
-            // Set the month to the new month
             month = date.getMonth();
-        }
-
-        else {
-
-            // Set the date to the current date
+        } else {
             date = new Date();
         }
 
-        // Call the manipulate function to 
-        // update the calendar display
         manipulate();
     });
 });
+
+// Initialize the calendar
+manipulate();
