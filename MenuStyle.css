@@ -1,7 +1,7 @@
 ﻿.logo {
     margin-left: 10%;
-    width: 75px;
-    height: 70px;
+    width: 85px;
+    height: 80px;
 }
 
 .overlay {
@@ -43,4 +43,27 @@
     right: 45px;
     font-size: 60px;
 }
+
+/* Social media icons*/
+.menu-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .menu-socials a {
+        margin: 0 10px;
+    }
+
+.social-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    border-radius: 10%;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+
 

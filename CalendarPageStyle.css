@@ -43,7 +43,6 @@
     text-align: center;
     font-weight: 500;
     font-size: 1.45rem;
-    padding: 10px 0 10px 0;
 }
 
 .calendar-body {
@@ -136,7 +135,7 @@
 .event-header {
     background: #565050ff;
     color: white;
-    padding: 20px 10px 20px 10px;
+    padding: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
