@@ -7,3 +7,13 @@
 	margin-right: 15%;
 	margin-top: 40px;
 }
+
+p {
+	position: relative;
+	align-content: center;
+	margin-left: 15%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: white;
+}
